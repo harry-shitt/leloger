@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/map.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src ="js/havershine.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Map</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Method 2</h1>
+    </div>
+    <div class="container">
+        <div class="left " style="float:left; width:20%;">
+            <div id="menuContainer">
+                <div class="menuItem first">
+                    <div class="settingsIcon"></div>
+                    <button id="usericon" class="btn dropbtn"><i class="fa fa-user"></i></button>
+                    <div class="downArrowIcon"></div>
+                </div>
+
+            </div>
+            <div class="form">
+                <h2>Enter your details here</h2>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Place :</label>
+                      <input type="text" class="form-control" id="placename" placeholder="Place">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">where it is? :</label>
+                      <input type="text" class="form-control" id="location" placeholder="Where">
+                    </div>
+                    <div class="form-group">
+                        <button type = "button" onclick="findplace()" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
+                    </div>
+            </div>
+        </div>
+        <div id="map"class="right"></div>
+    </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl4IFUvzMQSDXl8jJdIn9BtX9b5Z8Gj2A=&callback=initMap"></script>
+</body>
